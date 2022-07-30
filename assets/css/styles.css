@@ -204,17 +204,17 @@ img {
 }
 
 .nav__logo:hover {
-  color: var(--first-color-alt);
+  color: var(--text-color);
 }
 
 .nav__toogle {
   font-size: 1.1rem;
-  color: var(--text-color);
+  color: var(--first-color);
   cursor: pointer;
 }
 
 .nav__toggle:hover {
-  color: var(--first-color);
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 767px) {
