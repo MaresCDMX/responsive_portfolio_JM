@@ -209,3 +209,19 @@ function handleSubmit(event) {
   );
   $buttonMailto.click();
 }
+
+/*==================== Change Language ====================*/
+
+const $checkbox = document.querySelector(".check");
+
+$checkbox.addEventListener("click", change);
+
+function change() {
+  let traductor = $checkbox.checked;
+
+  if (traductor == true) {
+    location.href = "/es/index.html";
+  } else {
+    location.href = "../index.html";
+  }
+}
