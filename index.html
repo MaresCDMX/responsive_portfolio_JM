@@ -780,7 +780,7 @@
             </div>
 
             <div>
-              <button class="button button--flex" type="submit">
+              <button class="button button--flex" type="submit" value="Send">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </button>
@@ -832,19 +832,19 @@
               ><i class="uil uil-linkedin-alt"></i
             ></a>
             <a
-                href="https://api.whatsapp.com/send?phone=525548056471&text=Hola,%20Necesito%20ayuda%20con%20un%20proyecto"
-                target="_blank"
-                class="footer__social"
-              >
-                <i class="uil uil-whatsapp"></i>
-              </a>
-              <a
-                href="https://m.me/jesusmares82"
-                target="_blank"
-                class="footer__social"
-              >
-                <i class="uil uil-facebook-messenger-alt"></i>
-              </a>
+              href="https://api.whatsapp.com/send?phone=525548056471&text=Hola,%20Necesito%20ayuda%20con%20un%20proyecto"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a
+              href="https://m.me/jesusmares82"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-facebook-messenger-alt"></i>
+            </a>
           </div>
         </div>
 
@@ -858,6 +858,21 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+    <!--==================== Email Js Link ====================-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!--==================== Sweet Alert ====================-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("z9uI7NhhakQl2Aptf");
+      })();
+    </script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="/assets/js/swiper-bundle.min.js"></script>

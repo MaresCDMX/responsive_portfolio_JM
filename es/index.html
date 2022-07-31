@@ -331,7 +331,9 @@
               <div class="skills__header">
                 <i class="uil uil-wordpress-simple skills__icon"></i>
                 <div>
-                  <h1 class="skills__title">Sistema de gestión de contenidos CMS</h1>
+                  <h1 class="skills__title">
+                    Sistema de gestión de contenidos CMS
+                  </h1>
                   <span class="skills__subtitle">Más de 1 año</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
@@ -786,7 +788,7 @@
             </div>
 
             <div>
-              <button class="button button--flex" type="submit">
+              <button class="button button--flex" type="submit" value="Send">
                 Enviar Mensaje
                 <i class="uil uil-message button__icon"></i>
               </button>
@@ -797,7 +799,7 @@
             target="_blank"
             id="trucazo"
             style="visibility: hidden; width: 0px"
-            >enviar mensaje</a
+            >send message</a
           >
         </div>
       </section>
@@ -864,6 +866,21 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+
+    <!--==================== Email Js Link ====================-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <!--==================== Sweet Alert ====================-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("z9uI7NhhakQl2Aptf");
+      })();
+    </script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="/assets/js/swiper-bundle.min.js"></script>

@@ -190,7 +190,8 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*==================== Form ====================*/
+/*==================== Form  ====================*/
+
 const $form = document.querySelector("#form");
 const $buttonMailto = document.querySelector("#trucazo");
 
