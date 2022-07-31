@@ -1,5 +1,9 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500;600&family=Raleway:wght@400;700;900&family=Shadows+Into+Light&family=Staatliches&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500;600&family=Raleway:wght@400;700;900&family=Shadows+Into+Light&family=Staatliches&display=swap');*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -25,8 +29,7 @@
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
-
+  --body-font: 'IBM Plex Sans Condensed', sans-serif;
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -179,6 +182,10 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+}
+
+button {
+  font-family: var(--body-font);
 }
 
 ul {
