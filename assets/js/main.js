@@ -190,6 +190,22 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
+/*==================== Change Language ====================*/
+
+const $checkbox = document.querySelector(".check");
+
+$checkbox.addEventListener("click", change);
+
+function change() {
+  let traductor = $checkbox.checked;
+
+  if (traductor == true) {
+    location.href = "/es/index.html";
+  } else {
+    location.href = "../index.html";
+  }
+}
+
 /*==================== Form  ====================*/
 
 /*const $form = document.querySelector("#form");
@@ -211,6 +227,7 @@ function handleSubmit(event) {
   $buttonMailto.click();
 }*/
 
+const $checkbox2 = document.querySelector(".check");
 const $form = document.querySelector("#form");
 
 $form.addEventListener("submit", handleSubmit);
@@ -224,11 +241,21 @@ async function handleSubmit(event) {
     form.get("email") === "" ||
     form.get("message") === ""
   ) {
-    swal({
-      title: "Are you sure?",
-      text: "Form fields must be filled!",
-      icon: "warning",
-    });
+    let traductor = $checkbox.checked;
+
+    if (traductor == true) {
+      swal({
+        title: "Error!",
+        text: "Los campos del formulario deben llenarse!",
+        icon: "warning",
+      });
+    } else {
+      swal({
+        title: "Are you sure?",
+        text: "Form fields must be filled!",
+        icon: "warning",
+      });
+    }
   } else {
     const response = await fetch(this.action, {
       method: this.method,
@@ -239,27 +266,20 @@ async function handleSubmit(event) {
     });
     if (response.ok) {
       this.reset();
-      swal({
-        title: "Success!",
-        text: "Thanks for your message!",
-        icon: "success",
-      });
+      let traductor = $checkbox.checked;
+      if (traductor == true) {
+        swal({
+          title: "Gracias!",
+          text: "Tu mensaje ha sido enviado!",
+          icon: "success",
+        });
+      } else {
+        swal({
+          title: "Success!",
+          text: "Thanks for your message!",
+          icon: "success",
+        });
+      }
     }
-  }
-}
-
-/*==================== Change Language ====================*/
-
-const $checkbox = document.querySelector(".check");
-
-$checkbox.addEventListener("click", change);
-
-function change() {
-  let traductor = $checkbox.checked;
-
-  if (traductor == true) {
-    location.href = "/es/index.html";
-  } else {
-    location.href = "../index.html";
   }
 }
