@@ -192,7 +192,7 @@ themeButton.addEventListener("click", () => {
 
 /*==================== Form  ====================*/
 
-const $form = document.querySelector("#form");
+/*const $form = document.querySelector("#form");
 const $buttonMailto = document.querySelector("#trucazo");
 
 $form.addEventListener("submit", handleSubmit);
@@ -209,6 +209,43 @@ function handleSubmit(event) {
     )}  Message: ${form.get("message")}`
   );
   $buttonMailto.click();
+}*/
+
+const $form = document.querySelector("#form");
+
+$form.addEventListener("submit", handleSubmit);
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const form = new FormData(this);
+  if (
+    form.get("project") === "" ||
+    form.get("name") === "" ||
+    form.get("email") === "" ||
+    form.get("message") === ""
+  ) {
+    swal({
+      title: "Are you sure?",
+      text: "Form fields must be filled!",
+      icon: "warning",
+    });
+  } else {
+    const response = await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+    if (response.ok) {
+      this.reset();
+      swal({
+        title: "Success!",
+        text: "Thanks for your message!",
+        icon: "success",
+      });
+    }
+  }
 }
 
 /*==================== Change Language ====================*/
