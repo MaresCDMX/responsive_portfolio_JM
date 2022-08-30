@@ -11,11 +11,20 @@
     />
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <!--==================== SPLITTING JS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <title>Responsive Portfolio Website</title>
+    <title>Responsive Portfolio Website JM</title>
   </head>
   <body>
     <div class="lds-hourglass"></div>
@@ -148,8 +157,12 @@
             <div class="home__data">
               <h1 class="home__title">
                 <span class="home__title-text">
-                  <span class="home__title-text-1">Hello, I'm</span>
-                  <span class="home__title-text-2 gradient-text">Jesús</span>
+                  <span data-splitting class="home__title-text-1"
+                    >Hello, I'm</span
+                  >
+                  <span data-splitting class="home__title-text-2 gradient-text"
+                    >Jesús</span
+                  >
                 </span>
               </h1>
               <h3 class="home__subtitle">I'm a Fontend developer</h3>
@@ -731,6 +744,40 @@
                 </a>
               </div>
             </div>
+
+            <!--==================== PORTFOLIO 6====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="/assets/img/portfolio6.jpeg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Website Logoterapeuta</h3>
+                <p class="portfolio__description">
+                  Web application that uses HTML, CSS, JavaScript.
+                </p>
+                <a
+                  href="https://logoterapia.netlify.app/"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-window button__icon2"></i>
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+                <a
+                  href="https://github.com/MaresCDMX/logoterapeuta"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  <i class="uil uil-github-alt button__icon2"></i>
+                  Code
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <!--==== Add Arrows =======-->
           <div class="swiper-button-next">
@@ -778,7 +825,7 @@
 
               <div>
                 <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">55-4805-6471</span>
+                <span class="contact__subtitle">55 4805 6471</span>
               </div>
             </div>
             <div class="contact__information">
@@ -935,6 +982,9 @@
 
     <!--==================== SWIPER JS ====================-->
     <script src="/assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== SPLITTING JS ====================-->
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="/assets/js/main.js"></script>

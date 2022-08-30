@@ -283,3 +283,6 @@ async function handleSubmit(event) {
     }
   }
 }
+
+/*==================== SPLITTING JS  ====================*/
+Splitting();

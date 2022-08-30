@@ -428,6 +428,56 @@ img {
 
 }
 
+.home__title-text-2 {
+  font-size: var(--big-font-size);
+  color: var(--title-color);
+}
+
+.home__title-text-2 .char {
+  cursor: zoom-in;
+  transform-origin: center bottom;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.7, 1.8), color 400ms ease;
+  color: var(--color);
+  box-shadow: none;
+}
+
+.home__title-text-2 .char:nth-child(3),
+.home__title-text-2 .char:nth-child(4) {
+  letter-spacing: 0.02ch;
+}
+
+.home__title-text-2 .char:hover {
+  transform: scale(1.4);
+  transition-duration: 200ms;
+  text-shadow: 0px 0px 3px black, 0px 0px 20px var(--color);
+  z-index: 1;
+}
+
+.home__title-text-2 .char:nth-child(1):hover {
+  --color: #ffd300;
+}
+
+.home__title-text-2 .char:nth-child(2):hover {
+  --color: #de38c8;
+}
+
+.home__title-text-2 .char:nth-child(3):hover {
+  --color: #8b5fda;
+}
+
+.home__title-text-2 .char:nth-child(4):hover {
+  --color: #86bbd8;
+}
+
+.home__title-text-2 .char:nth-child(5):hover {
+  --color: #6eee8c;
+}
+
+.home__title-text-2 .char:nth-child(6):hover {
+  --color: #eb9486;
+}
+
+
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--text-color);
@@ -985,7 +1035,7 @@ img {
 /*==================== CONTACT ME ====================*/
 
 .contact__container {
-  row-gap: rem;
+  row-gap: 1rem;
 }
 
 .contact__information {
@@ -1008,7 +1058,6 @@ img {
 .contact__subtitle {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-
 }
 
 .contact__content {
@@ -1516,4 +1565,16 @@ img {
   /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+
+.splitting .char {
+  animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+  animation-delay: calc(60ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-1em) rotate(-.5turn) scale(0.5);
+    opacity: 0;
+  }
 }
