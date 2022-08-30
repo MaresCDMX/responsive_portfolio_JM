@@ -286,3 +286,11 @@ async function handleSubmit(event) {
 
 /*==================== SPLITTING JS  ====================*/
 Splitting();
+
+/*==================== VanillaTilt  ====================*/
+VanillaTilt.init(document.querySelectorAll(".about__img"), {
+  max: 25,
+  speed: 400,
+  glare: true,
+  "max-glare": 1,
+});
