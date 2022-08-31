@@ -294,3 +294,28 @@ VanillaTilt.init(document.querySelectorAll(".about__img"), {
   glare: true,
   "max-glare": 1,
 });
+
+/*==================== GSAP ANIMATIONS  ====================*/
+
+const buttons = document.querySelectorAll(".card-buttons button");
+const sectiones = document.querySelectorAll(".card-section");
+const card = document.querySelector(".card");
+
+const handleButtonClick = (e) => {
+  const targetSection = e.target.getAttribute("data-section");
+  const section = document.querySelector(targetSection);
+  console.log(section);
+  console.log(targetSection);
+  targetSection != "#aboutme"
+    ? card.classList.add("is-active")
+    : card.classList.remove("is-active");
+  card.setAttribute("data-state", targetSection);
+  sectiones.forEach((s) => s.classList.remove("is-active"));
+  buttons.forEach((b) => b.classList.remove("is-active"));
+  e.target.classList.add("is-active");
+  section.classList.add("is-active");
+};
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", handleButtonClick);
+});

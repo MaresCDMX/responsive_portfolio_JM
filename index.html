@@ -21,6 +21,8 @@
       href="https://unpkg.com/splitting/dist/splitting-cells.css"
     />
 
+    <link rel="stylesheet/less" type="text/css" href="/assets/css/style.less" />
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
@@ -189,7 +191,175 @@
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
         <div class="about__container container grid">
-          <img src="/assets/img/me.png" alt="" class="about__img" />
+          <div class="card is-active" data-state="#aboutme">
+            <div class="card-header">
+              <div
+                class="card-cover"
+                style="
+                  background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+                "
+              ></div>
+              <img class="card-avatar" src="/assets/img/me.png" alt="avatar" />
+              <h1 class="card-fullname">Jesús Mares</h1>
+              <h2 class="card-jobtitle">Fronted Developer</h2>
+            </div>
+            <div class="card-main">
+              <div class="card-section is-active" id="aboutme">
+                <div class="card-content">
+                  <div class="card-subtitle">ABOUT</div>
+                  <p class="card-desc">
+                    I'm a Front End Engineer based in Mexico City ☀️. I describe
+                    myself as a passionate developer who loves coding, open
+                    source, and the web platform ❤️.. My Portfolio is powered by
+                    VS Code and coffee ☕ ...
+                  </p>
+                </div>
+                <div class="card-social">
+                  <a href="https://github.com/jesusmares82-hub" target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      /></svg
+                  ></a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=525548056471&text=Hola,%20Necesito%20ayuda%20con%20un%20proyecto"
+                    target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-whatsapp"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                      /></svg
+                  ></a>
+                  <a href="https://m.me/jesusmares82" target="_blank"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-telegram"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                      /></svg
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/jesusmares82/"
+                    target="_blank"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z"
+                      /></svg
+                  ></a>
+                </div>
+              </div>
+              <div class="card-section" id="experience">
+                <div class="card-content">
+                  <div class="card-subtitle">WORK EXPERIENCE</div>
+                  <div class="card-timeline">
+                    <div class="card-item" data-year="2022">
+                      <div class="card-item-title">
+                        Front-end Developer at <span>Fonoteca</span>
+                      </div>
+                      <div class="card-item-desc">
+                        Front-end Developer that use HTML, CSS & Javascript.
+                      </div>
+                    </div>
+                    <div class="card-item" data-year="2015">
+                      <div class="card-item-title">
+                        E-learning Advisor at <span>DGTIC UNAM</span>
+                      </div>
+                      <div class="card-item-desc">
+                        Training more than 150 online students for two or three
+                        periods a year, solving technical questions, giving
+                        feedback and qualifying on the moodle platform.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-section" id="contactme">
+                <div class="card-content">
+                  <div class="card-subtitle">CONTACT</div>
+                  <div class="card-contact-wrapper">
+                    <div class="card-contact">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"
+                        />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      México - CDMX Tlalpan
+                    </div>
+                    <div class="card-contact">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                        /></svg
+                      >(55) 4805 6471
+                    </div>
+                    <div class="card-contact">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        />
+                        <path d="M22 6l-10 7L2 6" />
+                      </svg>
+                      jesusmares82@gmail.com
+                    </div>
+                    <a href="#contact" class="button button--flex btn-grad">
+                      Contact Me <i class="uil uil-message button__icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <button data-section="#aboutme" class="is-active">ABOUT</button>
+                <button data-section="#experience">EXPERIENCE</button>
+                <button data-section="#contactme">CONTACT</button>
+              </div>
+            </div>
+          </div>
           <div class="about__container container">
             <span> <i class="uil uil-music"></i> Code with me...</span>
             <iframe
@@ -992,6 +1162,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="/assets/js/main.js"></script>
